@@ -31,7 +31,6 @@ public class Driver {
         FileInputFormat.setInputPaths(job,new Path("/input"));
         FileOutputFormat.setOutputPath(job,new Path("/output"));
 
-        System.out.println("add Hello world");
     }
 }
 
