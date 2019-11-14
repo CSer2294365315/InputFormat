@@ -15,6 +15,7 @@ public class Driver {
     public static void main(String[] args) throws IOException, ClassNotFoundException, InterruptedException {
         Job job = Job.getInstance(new Configuration());
         //original
+        //add in debug
         job.setJarByClass(Driver.class);
 
         job.setMapOutputKeyClass(Text.class);
