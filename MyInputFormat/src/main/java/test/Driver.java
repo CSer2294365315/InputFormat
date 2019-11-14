@@ -23,9 +23,9 @@ public class Driver {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(BytesWritable.class);
 
-        //1,将InputFormat设置为自定义的InputFormat
+
         job.setInputFormatClass(MyInputFormat.class);
-        //2，将OutputFormat设置为SequenceOutputFormat
+
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
 
         FileInputFormat.setInputPaths(job,new Path("/input"));
@@ -33,8 +33,7 @@ public class Driver {
 
     }
 }
-//add in master line1
-//add in debug
+
 
 
 
